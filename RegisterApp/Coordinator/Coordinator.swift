@@ -1,0 +1,8 @@
+//
+//  Coordinator.swift
+//  RegisterApp
+//
+//  Created by Drolllted on 28.07.2025.
+//
+
+import Foundation
