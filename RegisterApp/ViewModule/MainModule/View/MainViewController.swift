@@ -9,8 +9,12 @@ import UIKit
 
 final class MainViewController: UIViewController{
     
+    weak var mainCoordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+
     
 }
