@@ -79,6 +79,7 @@ final class CustomTextField: UITextField {
         iconImageView.contentMode = .scaleAspectFit
         iconImageView.tintColor = .systemGray
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(iconImageView)
         
         NSLayoutConstraint.activate([
             iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
@@ -97,5 +98,7 @@ final class CustomTextField: UITextField {
         if variables == .name || variables == .surname {
             autocapitalizationType  = .words
         }
+        
+        returnKeyType = variables == .repeatPassword ? .done : .next
     }
 }

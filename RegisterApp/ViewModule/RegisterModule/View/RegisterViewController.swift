@@ -10,6 +10,12 @@ import UIKit
 final class RegisterViewController: UIViewController {
     
     weak var registerCoordinator: RegisterCoordinator?
+    private var registerView: RegisterView!
+    
+    override func loadView() {
+        registerView = RegisterView()
+        view = registerView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
